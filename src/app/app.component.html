@@ -1,0 +1,24 @@
+<div>
+  <ol>
+    <li *ngFor='let name of pNames'>{{name}}</li>
+  </ol>
+</div>
+
+<input type="text" [(ngModel)]='newParentNames'>{{newParentNames}} <br>
+
+<button (click)="updateNames()">Click Me</button><br>
+
+<p>Parent Data from child</p>
+Parent Fruit :{{pFruit}}, Parent Tree:{{pTree}}
+<hr>
+<app-child [cNames]='pNames' (cFruit)='getParentFruit($event)' (cTree)='getParentTree($event)'></app-child>
+<hr>
+<new-comp></new-comp>
+<app-observable></app-observable>
+<div>
+  <button> <a routerLink='resolver/:name'>HomePageComponent</a></button>
+  <button><a routerLink='product-list'>Product List</a> </button>
+  <button> <a routerLink='product-details'>ProductDetailsComponent</a></button>
+  <button> <a routerLink='NotFound'>PageNotFoundComponent</a></button>
+</div>
+<router-outlet></router-outlet>

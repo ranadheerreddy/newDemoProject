@@ -1,0 +1,11 @@
+<P>Names from Parent</P>
+<h4>
+    <ol>
+        <li *ngFor='let name of cNames'>{{name}}</li>
+    </ol>
+</h4>
+
+<p>Child Data</p>
+child Fruit : {{Fruit}}, child Tree:{{Tree}}
+
+<button (click)='sendToParent()'>Send to Parent</button>
