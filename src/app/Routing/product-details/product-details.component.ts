@@ -18,7 +18,7 @@ export class ProductDetailsComponent implements OnInit {
   ];
   ngOnInit() {
     console.log(this.ActRouteRef);
-    this.selectProduct = this.ActRouteRef.params.value.pid;
+    // this.selectProduct = this.ActRouteRef.params.value.pid;
     console.log(this.selectProduct);
   }
 }
