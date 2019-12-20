@@ -15,6 +15,7 @@ import { PageNotFoundComponent } from './Routing/page-not-found/page-not-found.c
 import { ProductDetailsComponent } from './Routing/product-details/product-details.component';
 import { ProductListComponent } from './Routing/product-list/product-list.component';
 import { MyHttpInterceptor } from './http.interceptor';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { MyHttpInterceptor } from './http.interceptor';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule
   ],
   providers: [MathService, {
     provide: HTTP_INTERCEPTORS,
