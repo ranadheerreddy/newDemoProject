@@ -8,7 +8,7 @@ import { startWith, takeUntil } from 'rxjs/operators';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
+  templateUrl: './reactiveForm.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements AfterViewInit, OnInit, OnDestroy {
