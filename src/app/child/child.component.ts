@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, ChangeDetectionStrategy, ChangeDetectorRef, EventEmitter, Output } from '@angular/core';
 
+
 @Component({
   selector: 'app-child',
   templateUrl: './child.component.html',
